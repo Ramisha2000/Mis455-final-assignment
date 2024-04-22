@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#e8e8f1; 
+}
+
+
+.navbar {
+    background-color: rgba(61, 86, 102, 0.438); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.nav-link {
+    color: rgb(19, 18, 18) !important; /* ensures all nav links are white */
+}
+
+.navbar-brand img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); 
+}
+
+
+.carousel-item img {
+    object-fit: cover; 
+    height: 400px;
+    width: 400px ;
+}
+
+
+.card {
+    background-color: #f4f7e2ab;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: contain; 
+}
+
+.card-title {
+    color: #333; 
+    text-align: center;
+}
+
+.card-text {
+    color: #555; 
+    text-align: center;
+}
+
+
+
+
+footer {
+    background-color: #e8e8f1; 
+    color: rgba(29, 28, 28, 0.911); 
+    text-align: center;
+    padding: 40px 0; 
+    margin: auto;
+    
+    
+    
+}
+
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 500px; 
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+/* CSS animation */
+@keyframes rotate-logo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-brand img {
+    animation: rotate-logo 10s linear infinite;
+    size: 100px;
+    
+}
+
+
+
+
+
+
+
+
+
